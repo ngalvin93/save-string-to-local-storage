@@ -3,8 +3,8 @@ let term = document.getElementById('term')
 
 document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('form').addEventListener('submit', function(){
-        localStorage.clear()
+        sessionStorage.clear()
         let termValue = term.value
-        localStorage.setItem('term',termValue)
+        sessionStorage.setItem('term',termValue)
     })
 })
